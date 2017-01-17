@@ -6,7 +6,7 @@
 /*   By: chbechet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 03:16:03 by chbechet          #+#    #+#             */
-/*   Updated: 2017/01/17 01:13:16 by chbechet         ###   ########.fr       */
+/*   Updated: 2017/01/17 21:38:47 by chbechet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@
 ** ======= STRUCT =======
 */
 
-typedef enum		s_bool
+typedef enum		e_bool
 {
 	FALSE,
 	TRUE
 }					t_bool;
-
 
 typedef struct		s_list
 {
