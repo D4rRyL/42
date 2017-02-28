@@ -6,7 +6,7 @@
 /*   By: chbechet <chbechet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/08 23:12:35 by chbechet          #+#    #+#             */
-/*   Updated: 2017/02/26 19:23:41 by chbechet         ###   ########.fr       */
+/*   Updated: 2017/02/28 19:39:55 by chbechet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ static char		*ft_read(const int fd, char *str)
 {
 	int			ret;
 	char		buf[BUFF_SIZE + 1];
+	char		*tmp;
 
 	ret = BUFF_SIZE;
 	while (!str || (ft_strchr(str, '\n') == NULL && ret == BUFF_SIZE))
@@ -26,7 +27,12 @@ static char		*ft_read(const int fd, char *str)
 		if (!str)
 			str = ft_strdup(buf);
 		else
-			str = ft_strjoin(str, buf);
+		{
+			tmp = ft_strjoin(str, buf);
+			ft_strdel(&str);
+			str = ft_strdup(tmp);
+			ft_strdel(&tmp);
+		}
 	}
 	return (str);
 }
@@ -35,6 +41,7 @@ int				get_next_line(const int fd, char **line)
 {
 	static char		*str = NULL;
 	char			*tmp;
+	char			*tmp1;
 
 	if (fd < 0)
 		return (-1);
@@ -44,7 +51,9 @@ int				get_next_line(const int fd, char **line)
 	{
 		*tmp = '\0';
 		*line = ft_strdup(str);
-		str = tmp + 1;
+		tmp1 = str;
+		str = ft_strdup(tmp + 1);
+		ft_strdel(&tmp1);
 		return (1);
 	}
 	if (str && *str)
