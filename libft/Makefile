@@ -6,7 +6,7 @@
 #    By: chbechet <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/14 10:58:28 by chbechet          #+#    #+#              #
-#*   Updated: 2017/02/28 19:42:00 by chbechet         ###   ########.fr       *#
+#*   Updated: 2017/03/19 13:04:31 by chbechet         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC = ./ft_atoi.c ft_isdigit.c ft_memcpy.c ft_putendl.c ft_putstr_fd.c \
 	  ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_swap.c ft_foreach.c ft_range.c \
 	  ft_is_negative.c ft_recursive_factorial.c get_next_line.c
 
-HEADER = ./includes/libft.h
+HEADER = ./includes/libft.h get_next_line.h
 
 TARGET = ./ft_atoi.o ft_isdigit.o ft_memcpy.o ft_putendl.o ft_putstr_fd.o \
 	  ft_strlen.o ft_bzero.o ft_isprint.o ft_memmove.o ft_putendl_fd.o \
