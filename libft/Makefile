@@ -6,7 +6,7 @@
 #    By: chbechet <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/14 10:58:28 by chbechet          #+#    #+#              #
-#*   Updated: 2017/03/19 13:04:31 by chbechet         ###   ########.fr       *#
+#*   Updated: 2017/03/19 15:38:27 by chbechet         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = ./ft_atoi.c ft_isdigit.c ft_memcpy.c ft_putendl.c ft_putstr_fd.c \
 	  ft_strmap.c ft_strmapi.c ft_strjoin.c ft_strsub.c ft_itoa.c ft_strlcat.c\
 	  ft_strtrim.c ft_strsplit.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
 	  ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_swap.c ft_foreach.c ft_range.c \
-	  ft_is_negative.c ft_recursive_factorial.c get_next_line.c
+	  ft_is_negative.c ft_recursive_factorial.c get_next_line.c ft_error.c
 
 HEADER = ./includes/libft.h get_next_line.h
 
@@ -40,7 +40,7 @@ TARGET = ./ft_atoi.o ft_isdigit.o ft_memcpy.o ft_putendl.o ft_putstr_fd.o \
 	  ft_strmap.o ft_strmapi.o ft_strjoin.o ft_strsub.o ft_itoa.o ft_strlcat.o\
 	  ft_strtrim.o ft_strsplit.o ft_lstadd.o ft_lstdel.o ft_lstdelone.o \
 	  ft_lstiter.o ft_lstmap.o ft_lstnew.o ft_swap.o ft_foreach.o ft_range.o \
-	  ft_is_negative.o ft_recursive_factorial.o get_next_line.o
+	  ft_is_negative.o ft_recursive_factorial.o get_next_line.o ft_error.o
 
 all : $(NAME)
 
