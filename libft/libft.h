@@ -6,7 +6,7 @@
 /*   By: chbechet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 03:16:03 by chbechet          #+#    #+#             */
-/*   Updated: 2017/01/17 21:38:47 by chbechet         ###   ########.fr       */
+/*   Updated: 2017/03/24 11:22:12 by chbechet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putnbr(int nb);
 void				ft_putnbr_fd(int nb, int fd);
 void				ft_is_negative(int n);
+void				ft_tab_number(int **tab, int l, int c);
 
 /*
 ** ======== MEMORY =======
