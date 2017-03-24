@@ -6,11 +6,8 @@
 /*   By: chbechet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 03:16:03 by chbechet          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2017/03/24 11:22:12 by chbechet         ###   ########.fr       */
-=======
+/*   Updated: 2017/03/24 11:41:25 by chbechet         ###   ########.fr       */
 /*   Updated: 2017/03/19 15:40:17 by chbechet         ###   ########.fr       */
->>>>>>> e5e2242d605e1e62a49f971583160a590588ac8b
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,11 +47,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putnbr(int nb);
 void				ft_putnbr_fd(int nb, int fd);
 void				ft_is_negative(int n);
-<<<<<<< HEAD
 void				ft_tab_number(int **tab, int l, int c);
-=======
-void				ft_error(char *str);
->>>>>>> e5e2242d605e1e62a49f971583160a590588ac8b
 
 /*
 ** ======== MEMORY =======
