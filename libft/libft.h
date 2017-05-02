@@ -6,7 +6,7 @@
 /*   By: chbechet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/24 11:43:35 by chbechet          #+#    #+#             */
-/*   Updated: 2017/03/24 11:43:37 by chbechet         ###   ########.fr       */
+/*   Updated: 2017/05/02 03:14:26 by chbechet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,6 +114,7 @@ void				ft_foreach(int *tab, int lenght, void (*f)(int));
 void				ft_swap(int *a, int *b);
 char				*ft_strnew(size_t size);
 char				*ft_strdel(char **as);
+unsigned int		ft_abs(int nbr);
 
 /*
 ** ======= LIST =======
